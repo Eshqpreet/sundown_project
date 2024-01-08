@@ -58,6 +58,10 @@
     animation: move 10s linear infinite;
 }
 
+.ele:hover .overlay {
+    top: 0%;
+}
+
 @keyframes anime1 {
     from {
         transform: translate(55%, -3%);
