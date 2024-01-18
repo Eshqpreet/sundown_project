@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="./../assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -15,7 +16,7 @@
     <div class="fixed-image h-[30vw] w-[24vw] rounded-[10px] fixed z-10 left-[50%] top-[25%] hidden bg-cover bg-center">
     </div>
 
-    <div id="main">
+    <div id="main" class="relative z-10">
         <div id="page1 " class="min-h-[100vh] w-full bg-[#EFEAE3] relative pt-0 pb-0 pr-[2vw] pl-[2vw] ">
             <nav class="h-[100px] w-full flex items-center justify-between pt-[2vw] pb-[2vw]">
                 <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c2_Sundown%20logo.svg"
@@ -67,7 +68,7 @@
 
         </div>
 
-        <div id="page2" class="min-h-[100vh] w-full relative">
+        <div id="page2" class="min-h-[100vh] w-full relative bg-[#EFEAE3]">
             <div id="movingText" class="whitespace-nowrap overflow-x-auto ">
                 <div class="con">
                     <h1 class="movingHead">EXPERIENCES</h1>
@@ -173,17 +174,62 @@
             </div>
         </div>
 
+        <div id="page4" class="h-[70vh] w-full bg-[#EFEAE3] pr-[2vw] pl-[2vw] pt-[10vw] pb-[10vw]">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+        </div>
+
+        <div id="page5" class="h-[60vh] w-full ">
+
+        </div>
     </div>
 
 
+    <div id="footer"
+        class="fixed z-[9] h-[105vh] w-full bg-[black] bottom-0 text-[#fff] flex  flex-col justify-end pt-[1vw] pb-[1vw] pr-[3vw] pl-[3vw] overflow-hidden">
+        <div id="gooeyL" class="h-[75vw] w-[75vw] absolute rounded-[50%] top-[-80%] left-[-10%] blur-[20px] z-[7]">
+        </div>
+        <div id="gooeyR" class="h-[75vw] w-[75vw] absolute rounded-[50%] top-[-80%] right-[-25%] blur-[20px] z-[7]">
+        </div>
+        <div id="footerDiv" class="h-[20vh] w-full flex justify-between  relative z-[10]">
+            <div class="text-[#fff] text-[2vw] font-bold p-[2vw] ">
+                <h2>Work</h2>
+                <h2>Studio</h2>
+                <h2>Contact</h2>
+            </div>
+            <div class="flex flex-col">
+                <span class="w-[21rem]">
+                    <p class="text-[#fff] font-[400] text-[19px] leading-7 p-[2vw] w-full">
+                        Get industry insights and creative inspiration straight to your inbox.
+                    </p>
+                </span>
+                <form class="flex items-center border-b-[1px] border-[grey] w-[14rem]">
+                    <input type="email" placeholder="Email Address" class="flex bg-transparent p-[10px] text-white"
+                        value="">
+                    <button class="text-[grey] text-[20px] cursor-pointer" type="submit">-></button>
+                </form>
+            </div>
+        </div>
+        <div class="relative z-[10]">
+            <h1 class="text-[22vw] font-bold">Sundown</h1>
+            <div id="footerBottom" class="border-t-[1px] border-solid border-[#dadada]">
+            </div>
+
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
-        integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
-        integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 

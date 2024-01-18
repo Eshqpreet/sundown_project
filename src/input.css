@@ -54,6 +54,19 @@
     animation: gooey 4s ease-in-out infinite alternate;
 }
 
+
+
+#gooeyL {
+    background: linear-gradient(to top right, #FE330A, #ff671b);
+    animation: gooeyL 4s ease-in-out infinite alternate;
+}
+
+
+#gooeyR {
+    background: linear-gradient(to top right, #FE330A, #ff671b);
+    animation: gooeyR 2s ease-in-out infinite alternate;
+}
+
 .con {
     animation: move 10s linear infinite;
 }
@@ -61,6 +74,20 @@
 .ele:hover .overlay {
     top: 0%;
 }
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    border-left: 1px solid #aeadad !important;
+    width: 30% !important;
+    padding: 0 2vw;
+}
+
+
 
 @keyframes anime1 {
     from {
@@ -99,5 +126,25 @@
 
     to {
         transform: translate(-10%, 10%) skew(-10deg);
+    }
+}
+
+@keyframes gooeyL {
+    from {
+        transform: translate(10%, -10%);
+    }
+
+    to {
+        transform: translate(-2%, 4%) skew(-8deg);
+    }
+}
+
+@keyframes gooeyR {
+    from {
+        transform: translate(10%, 10%);
+    }
+
+    to {
+        transform: translate(4%, 4%) skew(-12deg);
     }
 }
